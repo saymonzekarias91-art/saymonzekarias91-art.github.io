@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gallery | Amanuel Production Photography</title>
+
+  <link rel="icon" href="images/logo.png">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Navigation Bar -->
+
+<header>
+
+<nav>
+
+
+<div class="logo">
+
+  <svg width="24" height="24" viewBox="0 0 24 24" 
+  fill="none" stroke="#1a1a1a" stroke-width="2">
+
+    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+
+    <circle cx="12" cy="13" r="4"/>
+
+  </svg>
+
+  AMANUEL PRODUCTION
+
+</div>
+
+
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="price.html">Price</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+
+
+
+
+
+<!-- Gallery Section -->
+
+
+<section class="gallery">
+
+<div class="gallery-header">
+  <h1>
+  Our Gallery
+  </h1>
+
+  <p class="gallery-intro">
+  Explore some of our favourite moments captured through
+  professional photography. Every event tells a unique story.
+  </p>
+</div>
+
+
+
+
+
+<!-- Wedding Gallery -->
+
+<div class="gallery-section" id="wedding">
+
+<h2>
+Wedding
+</h2>
+
+<div class="gallery-grid">
+<img src="images/wedding1.jpg" alt="Wedding photography">
+<img src="images/wedding2.jpg" alt="Wedding photography">
+<img src="images/wedding3.jpg" alt="Wedding photography">
+</div>
+
+</div>
+
+
+
+
+<!-- Baptism Gallery -->
+
+<div class="gallery-section" id="baptism">
+
+<h2>
+Baptism
+</h2>
+
+<div class="gallery-grid">
+<img src="images/baptism1.jpg" alt="Baptism photography">
+<img src="images/baptism2.jpg" alt="Baptism photography">
+<img src="images/baptism3.jpg" alt="Baptism photography">
+</div>
+
+</div>
+
+
+
+
+<!-- Graduation Gallery -->
+
+<div class="gallery-section" id="graduation">
+
+<h2>
+Graduation
+</h2>
+
+<div class="gallery-grid">
+<img src="images/graduation1.jpg" alt="Graduation photography">
+<img src="images/graduation2.jpg" alt="Graduation photography">
+<img src="images/graduation3.jpg" alt="Graduation photography">
+</div>
+
+</div>
+
+
+
+
+<!-- Pre Wedding Gallery -->
+
+<div class="gallery-section" id="prewedding">
+
+<h2>
+Pre-Wedding
+</h2>
+
+<div class="gallery-grid">
+<img src="images/prewedding1.jpg" alt="Pre wedding photography">
+<img src="images/prewedding2.jpg" alt="Pre wedding photography">
+<img src="images/prewedding3.jpg" alt="Pre wedding photography">
+</div>
+
+</div>
+
+
+
+
+<!-- Birthday Gallery -->
+
+<div class="gallery-section" id="birthday">
+
+<h2>
+Birthday
+</h2>
+
+<div class="gallery-grid">
+<img src="images/birthday1.jpg" alt="Birthday photography">
+<img src="images/birthday2.jpg" alt="Birthday photography">
+<img src="images/birthday3.jpg" alt="Birthday photography">
+</div>
+
+</div>
+
+
+
+
+<!-- Portrait Gallery -->
+
+<div class="gallery-section" id="portrait">
+
+<h2>
+Portrait
+</h2>
+
+<div class="gallery-grid">
+<img src="images/portrait1.jpg" alt="Portrait photography">
+<img src="images/portrait2.jpg" alt="Portrait photography" class="crop-top">
+<img src="images/portrait3.jpg" alt="Portrait photography">
+</div>
+
+</div>
+
+
+
+
+<!-- Booking Section -->
+
+
+<section class="gallery-contact">
+
+
+<h2>
+Like what you see?
+</h2>
+
+
+<p>
+Book Amanuel Production for your next special occasion.
+</p>
+
+
+<a href="contact.html" class="btn">
+Contact Us
+</a>
+
+
+</section>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Footer -->
+
+
+<footer>
+
+
+<p>
+&copy; 2026 Amanuel Production. All rights reserved.
+</p>
+
+
+<p>
+Email:
+amanuelpho@gmail.com
+</p>
+
+
+<p>
+
+Call:
+
+<a href="tel:+447398839357">
++44 7398 839357
+</a>
+
+
+|
+
+
+WhatsApp:
+
+<a href="https://wa.me/447398839357" target="_blank">
+Chat now
+</a>
+
+
+</p>
+
+
+</footer>
+
+
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get('category');
+
+  if (category) {
+    document.querySelectorAll('.gallery-section').forEach(section => {
+      if (section.id !== category) {
+        section.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+
+
+</body>
+
+</html>
